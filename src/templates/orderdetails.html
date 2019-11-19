@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Pizza House - Bestelling</title>
+        <link href="../html/main.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Details van bestelling {{.No}}</h1>
+        <div class="property"><span class="pname">Datum</span><span>{{.DateString}}</span></div>
+        <div class="property"><span class="pname">Klant</span><span>{{.Email}}</span></div>
+        <div class="property"><span class="pname">Totaal</span><span>&euro; {{.Total}}</span></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pizza</th>
+                    <th>Hoeveelheid</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{range .Lines}}
+                <tr>
+                    <td>{{.Pizza}}</td>
+                    <td>{{.Qty}}</td>
+                </tr>
+                {{end}}
+            </tbody>
+        </table>
+    </body>
+</html>

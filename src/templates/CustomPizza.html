@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Pizza House - Custom Pizzas</title>
+        <link href="../html/main.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Maak je eigen pizza!</h1>
+        <form method="POST">
+            <h1>Selecteer die bodem!</h1>
+                <select name="bodem">
+                    {{$bodems := index . "bodem"}}
+                    {{range $bodems}}
+                    <option value="{{.Name}}">{{.Name}} {{.Price}}€</option>
+                    {{end}}
+                </select> 
+            <h1>Kies een saus!</h1>
+                <select name="saus">
+                    {{$sauzen := index . "saus"}}
+                    {{range $sauzen}}
+                    <option value="{{.Name}}">{{.Name}} {{.Price}}€</option>
+                    {{end}}
+                </select> 
+            <h1>Kies je toppings!</h1>
+                {{$toppings := index . "topping"}}
+                {{range $toppings}}
+                <input type="checkbox" name="toppings" value="{{.Name}}">{{.Name}} {{.Price}}€<br>
+                {{end}}
+            <h1>Bezorgings gegevens</h1>
+                Email: <input type="email" name="email"><br />
+                Naam: <input type="text" name="name"><br />
+                Adres: <input type="text" name="address"><br />
+                Telefoonnummer: <input type="tel" name="phone"><br />
+            <input type="submit" value="bestel"/>
+        </form>
+    </body>
+</html>

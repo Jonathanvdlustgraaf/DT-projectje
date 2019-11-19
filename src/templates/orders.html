@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Pizza Ball - Bestellingen</title>
+        <link href="../html/main.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <H1>De bestellingen</H1>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Datum</th>
+                    <th>Klant</th>
+                    <th>Totaal</th>
+                </tr>
+            </thead>    
+            <tbody>
+                {{range .}}
+                <tr>
+                    <td><a href="../view/orderdetails?no={{.No}}">{{.No}}</a></td>
+                    <td>{{.DateString}}</td>
+                    <td>{{.Email}}</td>
+                    <td>&euro; {{.Total}}</td>
+                </tr>
+                {{end}}
+            </tbody>
+        </table>
+    </body>
+</html>

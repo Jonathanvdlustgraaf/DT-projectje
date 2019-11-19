@@ -1,0 +1,17 @@
+[
+    {
+        "name": "margherita",
+        "price": 8.5,
+        "image": "../images/margherita.jpg"
+    },
+    {
+        "name": "siciliano",
+        "price": 9.25,
+        "image": "../images/siciliano.png"
+    },
+    {
+        "name": "hawaii",
+        "price": 9.50,
+        "image": "../images/hawaii.png"
+    }
+]

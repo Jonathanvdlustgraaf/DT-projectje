@@ -1,0 +1,43 @@
+version: 0.2
+            
+phases:
+
+  install: 
+
+    runtime-versions:
+      golang: 1.12
+
+    commands:
+
+  pre_build: 
+    commands:
+
+      - pwd
+      - ls
+      - go version
+      - go env
+      # - go get -d -v ./...
+
+      # Run all tests included with our application
+      # - go test
+
+  build:
+    commands:
+
+      # - COMMIT_SHA="$(echo $CODEBUILD_SOURCE_VERSION | head -c 8)"
+      # - echo "<h4>Commit ID:" $COMMIT_SHA "</h4>"> html/COMMIT_SHA.html
+
+      # Build our application
+      - cp -r ./src/* ./
+      - go build -o bin/application
+
+artifacts:
+  files:
+    - bin/application
+    - data/*
+    - html/*
+    - images/*
+    - templates/*
+    - helpers/*
+    - repository/*
+    - types/*

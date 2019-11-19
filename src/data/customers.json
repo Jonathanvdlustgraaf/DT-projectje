@@ -1,0 +1,26 @@
+[
+	{
+		"email": "rlcomte@che.nl",
+		"name": "Rine le Comte",
+		"address": "Comtelaan 1, 3927GK Renswoude",
+		"phone": "0303 12133977 "
+	},
+	{
+		"email": "johndoe@acme.com",
+		"name": "John Doe",
+		"address": "277 Main Street Sacramento, CA 94273",
+		"phone": "1 887-889-888"
+	},
+	{
+		"email": "gvogelzang@che.nl",
+		"name": "Gerrit Vogelzang",
+		"address": "Horstweg 1",
+		"phone": "038 5438719"
+	},
+	{
+		"email": "bfmulder@che.nl",
+		"name": "Bob Mulder",
+		"address": "Kalverstraat 10b, 1234 BA Rutten",
+		"phone": "06 40100038"
+	}
+]

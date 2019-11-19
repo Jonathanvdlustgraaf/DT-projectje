@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <div>
+            <img src="../images/pizzahouse.png" height="100px" style="vertical-align:middle"> <span class="title">Pizza House - Voor de lekkerste pizza's</span>
+        </div>
+        <h1>De lijst met pizza's</h1>
+        <h2>Maar dan ook echt de hele lijst!</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Naam</th>
+                    <th>Prijs</th>
+                    <th>Afbeelding</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{range .}}
+                <tr>
+                    <td>{{.Name}}</td>
+                    <td>&euro; {{.Price | printf "%.2f"}}</td>
+                    <td><img src="{{.Image}}" width="250px" height="250px" /></td>
+                </tr>
+            {{end}}
+                <tr>
+                    <td><a href="../view/custompizza">Custom pizza</a></td>
+                    <td></td>
+                    <td><img src="../images/custom-pizza.png" width="200px" height="200px" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

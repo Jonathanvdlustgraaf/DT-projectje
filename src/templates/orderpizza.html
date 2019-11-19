@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Pizza House - Bestel een pizza</title>
+        <link href="../html/main.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div>
+            <img src="../images/pizzahouse.png" height="100px" style="vertical-align:middle"> <span class="title">Pizza House - Voor de lekkerste pizza's</span>
+        </div>
+        <h1>Bestel hier jo pizza's</h1>
+        <form method="POST">
+            Email: <input type="email" name="email"><br />
+            Naam: <input type="text" name="name"><br />
+            Adres: <input type="text" name="address"><br />
+            Telefoonnumer: <input type="tel" name="phone"><br />
+            <table>
+                <thead>
+                    <th>Pizza</th>
+                    <th>Hoeveelheid</th>
+                </thead>
+                {{$pp := .Pizzas}}
+                {{range .Rows}}
+                <tr>
+                    <td><select name="pizza">
+                        <option>Select a pizza...</option>
+                        {{range $pp}}
+                            <option value="{{.Name}}">{{.Name}}</option>
+                        {{end}}
+                    </select></td>
+                    <td><input type="number" name="qty"></td>
+                </tr>
+                {{end}}
+            </table>
+            <input type="submit" value="Bestel">
+        </form>
+    </body>
+</html>

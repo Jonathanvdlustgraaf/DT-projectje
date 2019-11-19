@@ -1,0 +1,77 @@
+[
+    {
+        "type":"bodem",
+        "price": 3,
+        "name": "Italiaans"
+    },
+    {
+        "type":"bodem",
+        "price": 3.5,
+        "name": "Amerikaans"
+    },
+    {
+        "type":"bodem",
+        "price": 2.5,
+        "name": "Turkse"
+    },
+    {
+        "type":"saus",
+        "price": 1,
+        "name": "tomatensaus"
+    },
+    {
+        "type":"saus",
+        "price": 1.5,
+        "name": "pindasaus"
+    },
+    {
+        "name":"saus",
+        "price": 1.25,
+        "image": "roomsaus"
+    },
+    {
+        "type":"toppings",
+        "price": 0.5,
+        "name": "kaas"
+    },
+    {
+        "type":"topping",
+        "price": 0.25,
+        "name": "knoflooksaus"
+    },
+    {
+        "type":"topping",
+        "price": 1.00,
+        "name": "gehakt"
+    },
+    {
+        "type":"topping",
+        "price": 0.50,
+        "name": "paprika"
+    },
+    {
+        "type":"topping",
+        "price": 0.50,
+        "name": "champingon"
+    },
+    {
+        "type":"topping",
+        "price": 0.35,
+        "name": "ui"
+    },
+    {
+        "type":"topping",
+        "price": 1.50,
+        "name": "tonin"
+    },
+    {
+        "type":"topping",
+        "price": 0.25,
+        "name": "sambal"
+    },
+    {
+        "type":"topping",
+        "price": 1.25,
+        "name": "shoarma"
+    }
+]
